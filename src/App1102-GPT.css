@@ -1,4 +1,32 @@
-body {
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    border-radius: 8px;
+    border: 2px solid #666;
+}
+.row2{
+    display: flex;
+}
+
+.card-city{
+    background-color: #ddd;
+    border-radius: 8px 8px 0 0;
+    padding: 4px 0;
+    border-bottom: 2px solid #333;
+}
+
+
+
+
+
+/* body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   margin: 0;
@@ -64,4 +92,4 @@ body {
 .period span {
   color: #888;
   font-size: 14px;
-}
+} */
