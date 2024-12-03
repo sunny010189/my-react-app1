@@ -6,7 +6,7 @@ import axios from 'axios';
 function App() {
   useEffect(()=>{
     (async()=>{
-      const data = await axios.get('./F-C0032-001.json');
+      const data = await axios.get('https://sunny010189.github.io/my-react-app1/json/F-C0032-001.json');
       console.log(data);
       // const{location}=data.data.cwaopendata.dataset;
 
