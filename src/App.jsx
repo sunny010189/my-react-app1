@@ -31,7 +31,7 @@ function App() {
                       <img src="./public/多雲時晴.svg" alt="" />
                     </p>
                     <p>多雲時晴</p>
-                    <p><img src="<CiUmbrella/>" alt="" />10%</p>
+                    <p><CiUmbrella/>10%</p>
                     <p></p>
                   </div>
                 </div>
