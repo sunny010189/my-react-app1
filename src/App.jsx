@@ -1,14 +1,22 @@
 import React from "react";
 import "./App.css";
 import { CiUmbrella } from "react-icons/ci";
-
+import axios from 'axios';
 
 function App() {
+  useEffect(()=>{
+    (async()=>{
+      const data = await axios.get('./F-C0032-001.json');
+      console.log(data);
+      // const{location}=data.data.cwaopendata.dataset;
+
+    })()
+  },[])
   return (
     <>
       <div className="wrap">
         <h2>36小時天氣預報</h2>
-        
+
         {/* 一列兩欄 */}
         <div className="row">
           <div className="col">
@@ -23,15 +31,18 @@ function App() {
                   <div className="col2">
                     <p>2日</p>
                     <p>
-                    上午6:00 <br />
-                    ~ <br />
-                    下午6:00 <br />
+                      上午6:00 <br />
+                      ~ <br />
+                      下午6:00 <br />
                     </p>
                     <p>
-                      <img src="./public/多雲時晴.svg" alt="" />
+                      <img src="./public/weather/多雲時晴.svg" alt="" />
                     </p>
                     <p>多雲時晴</p>
-                    <p><CiUmbrella/>10%</p>
+                    <p>
+                      <CiUmbrella />
+                      10%
+                    </p>
                     <p></p>
                   </div>
                 </div>
@@ -44,7 +55,8 @@ function App() {
   );
 }
 
-{/* //const WeatherCard = ({ city, forecasts }) => {
+{
+  /* //const WeatherCard = ({ city, forecasts }) => {
 //   return (
 //     <div className="city">
 //       <h3>{city}</h3>
@@ -137,13 +149,6 @@ function App() {
 //     </div>
 //   );
 // };
- */}
+ */
+}
 export default App;
-
-// useEffect(()=>{
-//   (async()=>{
-//     const data = await axios.get('./F-C0032-001.json');
-//     const{location}=data.data.cwaopendata.dataset;
-
-//   })
-// },[])
